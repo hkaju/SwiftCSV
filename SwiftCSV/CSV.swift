@@ -202,7 +202,7 @@ extension CSV {
 
 extension CSV {
     /// Serialize the provided CSV data
-    static func serialize(header: [String], rows: [[String]], delimiter: CSVDelimiter) -> String {
+    public static func serialize(header: [String], rows: [[String]], delimiter: CSVDelimiter) -> String {
         Serializer.serialize(header: header, rows: rows, delimiter: delimiter)
     }
 }
